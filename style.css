@@ -1,0 +1,14 @@
+
+   .bg {
+    /* The image used */
+    background-image: url("//c1.staticflickr.com/5/4690/25694387468_dc841ccda8_k.jpg");
+
+    /* Full height */
+    max-height: 3844px;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
