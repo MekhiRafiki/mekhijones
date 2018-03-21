@@ -1,14 +1,59 @@
-
-   .bg {
-    /* The image used */
-    background-image: url("//c1.staticflickr.com/5/4690/25694387468_dc841ccda8_k.jpg");
-
-    /* Full height */
-    max-height: 3844px;
-    width: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.table {
+  display: table;
+  margin: 0 auto;
+}
+ul#horizontal-list{
+  list-style: none;
+  padding-top: 20px;
+}
+ul#horizontal-list li{
+  display: inline;
+}
+#centerDiv{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 25%;
+  top: 50%;
+  text-align: center;
+  font-family: catnip, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+a {
+  color: grey;
+  text-decoration: none;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 10vw;
+  font-weight: bold;
+}
+li {
+  margin: 10px;
+  font-size: 4vw;
+  font-weight: normal;
+  color: gray;
+  text-align: center;
+}
+li:hover{
+  text-decoration: underline;
+  letter-spacing: 3px;
+  color: black;
+}
+#aboutS {
+  display: none;
+}
+#eduS {
+  display: none;
+}
+#expS {
+  display: none;
+}
+.information {
+  font-size: 2vw;
+  font-family: phoreuscherokee, serif;
+  font-style: normal;
+  font-weight: 300;
 }

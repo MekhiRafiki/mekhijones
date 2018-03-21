@@ -1,0 +1,72 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/smv6lsi.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <div id = "centerDiv">
+      <h1 style = "left: 50%;">Mekhi Jones</h1>
+      <ul style = "list-style-type:none; text-align: center;">
+        <li onClick = "aboutFunc()">About</li>
+          <div class = "information" id = "aboutS">
+            Friend. Engineer. Mentor. Student. World Traveler. <br>
+          </div>
+        <li onClick = "eduFunc()">Education</li>
+          <div class = "information" id = "eduS">
+            <strong>Stanford University</strong> Class of 2020 <br>
+            Computer Science Major, AI Concentration
+          </div>
+        <li onClick = "expFunc()">Experience</li>
+          <div class= "information" id = "expS">
+            <strong> Fall 2016 - Present </strong> Digital UX Associate - <i>Stanford Career Education - BEAM</i> <br>
+            <strong>Summer 2018:</strong> Software Engineer - <i>Google</i> <br>
+            <strong>Summer 2017:</strong> UX Consultant - <i>Infosys</i><br>
+            <strong> Summer 2016:</strong> IT Intern - <i>Smithsonian Institution</i>
+          </div>
+        <li><a href= "mailto: mekhi@cs.stanford.edu?Subject=Hi%20Mekhi!" target="_top">Contact</a></li>
+      </ul>
+
+      <div class = "table">
+        <ul style = "list-style-type:none;" id = "horizontal-list">
+          <li><a href="https://www.facebook.com/3Rafiki3" class="fa fa-facebook"></a></li>
+          <li><a href="https://twitter.com/Mekhi_Rafiki_" class="fa fa-twitter"></a></li>
+          <li><a href="https://www.snapchat.com/add/rafikithegod" class="fa fa-snapchat-ghost"></a></li>
+          <li><a href="https://www.instagram.com/therealmekhi/" class="fa fa-instagram"></a></li>
+          <li><a href="https://www.linkedin.com/in/rafiki/" class="fa fa-linkedin"></a></li>
+
+      </div>
+
+    </div>
+
+</body>
+
+<script>
+function aboutFunc(){
+  var x = document.getElementById("aboutS");
+  if(x.style.display === "none"){
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function eduFunc(){
+  var x = document.getElementById("eduS");
+  if(x.style.display === "none"){
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function expFunc(){
+  var x = document.getElementById("expS");
+  if(x.style.display === "none"){
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
