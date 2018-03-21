@@ -3,19 +3,23 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/smv6lsi.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="scripts.js"></script>
- 
-    <script>
-   
-   </script>
+  <script src="scripts\primary.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116133630-1"></script>
+  <script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
 
+      gtag('config', 'UA-116133630-1');
+  </script>
 </head>
 
 <body>
 
     <div id = "centerDiv">
       <h1 style = "left: 50%;">Mekhi Jones</h1>
-      
+
       <!-- Vertical List of sections -->
       <ul style = "list-style-type:none; text-align: center;">
         <li onClick = "aboutFunc()">About</li>
@@ -36,7 +40,7 @@
           </div>
         <li><a href= "mailto: mekhi@cs.stanford.edu?Subject=Hi%20Mekhi!" target="_top">Contact</a></li>
       </ul>
-      
+
       <!-- Social Media Icons -->
       <div class = "table">
         <ul style = "list-style-type:none;" id = "horizontal-list">
@@ -52,40 +56,3 @@
     </div>
 
 </body>
-<!-- Related Functions placed here instead of in js file because path didnt work -->
-<script>
-function aboutFunc(){
-  var x = document.getElementById("aboutS");
-  if(x.style.display === "none"){
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function eduFunc(){
-  var x = document.getElementById("eduS");
-  if(x.style.display === "none"){
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function expFunc(){
-  var x = document.getElementById("expS");
-  if(x.style.display === "none"){
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116133630-1"></script>
-<script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-    gtag('config', 'UA-116133630-1');
-</script>
