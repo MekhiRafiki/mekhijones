@@ -1,14 +1,28 @@
 <head>
+  <!-- Style Sheets -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/smv6lsi.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="scripts.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116133630-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+    gtag('config', 'UA-116133630-1');
+   </script>
+
 </head>
 
 <body>
 
     <div id = "centerDiv">
       <h1 style = "left: 50%;">Mekhi Jones</h1>
+      
+      <!-- Vertical List of sections -->
       <ul style = "list-style-type:none; text-align: center;">
         <li onClick = "aboutFunc()">About</li>
           <div class = "information" id = "aboutS">
@@ -28,7 +42,8 @@
           </div>
         <li><a href= "mailto: mekhi@cs.stanford.edu?Subject=Hi%20Mekhi!" target="_top">Contact</a></li>
       </ul>
-
+      
+      <!-- Social Media Icons -->
       <div class = "table">
         <ul style = "list-style-type:none;" id = "horizontal-list">
           <li><a href="https://www.facebook.com/3Rafiki3" class="fa fa-facebook"></a></li>
@@ -42,7 +57,7 @@
     </div>
 
 </body>
-
+<!-- Related Functions placed here instead of in js file because path didnt work -->
 <script>
 function aboutFunc(){
   var x = document.getElementById("aboutS");
