@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Effective Habits</title>
+
+		<meta charset="utf-8" />
+		<!-- StyleSheets -->
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+
+	<body>
+		<header>
+			<h1 style = "color: white"> Effective Habits - Weekly Accountability </h1>
+		</header>
+
+		<div class = "flex-container">
+			<div id="roles">
+				<!-- Roles to Goals organization -->
+				<h2> Roles to Goals </h2>
+
+				<div id = "Roles2GoalsList" class= "RGFlex">
+					<!-- To Be Populate by JS pull from Database -->
+				</div>
+				<!-- Below will be the pop up form for adding a new Role -->
+				<button class="open-button" onclick="openForm()">Open Form</button>
+				<div class="form-popup" id="myForm">
+				  <form action="/action_page.php" class="form-container">
+
+				    <label><b>New Role</b></label>
+				    <input id = "NewRoleField" type="text" placeholder="Club President" required>
+
+				    <button type="submit" class="btn" onclick="newRole()">Submit</button>
+				    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+				  </form>
+				</div>
+
+			</div>
+
+			<div id = "priorities">
+				<!-- Weekly priorities check off list-->
+				<h2> Weekly Priorities </h2>
+				<div id = "AddWeeklyPriority">
+					<h4> Add a New Weekly Priority </h4>
+					<textarea id="newPriorityText" type="text" placeholder="Complete 103 Pset" style="width:85%;"></textarea>
+					<input id = "prioritySubmit" type= "submit" class="btn" value="Add Priority" style="width:45%; background-color: #4CAF50; color: white;"></input>
+				</div>
+				<h3> Priority Listing </h3>
+				<div id = "PriorityListDiv">
+					<ul id = "priorityList">
+					</ul>
+				</div>
+			</div>
+
+			<div id = "tasks">
+				<!-- Tasks addition list -->
+				<h2> Daily Task Queue </h2>
+				<textarea id="newTaskText" type="text" placeholder="Send in Google Application"></textarea>
+
+				<input id = "taskSubmit" type= "submit" value="New Task" class="btn"></input>
+				<h3> Current Tasks </h3>
+				<div id = "TaskListDiv">
+					<ul id = "taskList" class="taskList" style="list-style-type: none">
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- Future additions below, like integrating Google Calendar -->
+		<div>
+
+  </body>
+
+
+  </html>

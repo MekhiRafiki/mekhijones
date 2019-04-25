@@ -1,0 +1,250 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+*:focus {
+    outline: 0px none transparent;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 14px/1.5 "Open Sans", "PT Sans", "Source Sans Pro",
+        "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    background-color: #ECF0F1;
+    color: #333;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 170%;
+}
+
+h2 span, h3 {
+    color: #34495E;
+}
+
+h3 {
+    font-size: 130%;
+}
+
+h4 {
+    font-size: 110%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], textarea {
+    border: 1px solid #bbb;
+    box-shadow: inset 0px 1px 2px #ccc;
+}
+
+textarea {
+    padding: 8px 10px;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 6px 8px;
+    width: 180px;
+}
+
+header {
+    position: relative;
+    height: 50px;
+    background-color: #34495E;
+    padding-top: 10px;
+}
+
+header h1 a {
+    color: #fff;
+    padding-left: 25px;
+}
+
+#roles {
+  width: 100%;
+  box-shadow: 2px 0px 10px #dfdfdf;
+}
+#priorities {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#tasks{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#AddWeeklyPriority {
+  text-align: center;
+  width: 100%;
+  align-content: center;
+}
+.flex-container {
+  display:flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.RoleGoal{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  text-align: center;
+}
+.RGFlex {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.roleGoalAdd {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.taskList{
+  display: flex;
+  flex-direction: column;
+}
+.specificTask{
+  display: flex;
+  flex-direction: row;
+}
+.specificTask.dragElem {
+  opacity: 0.4;
+}
+.specificTask.over {
+  //border: 2px dashed #000;
+  border-top: 2px solid blue;
+}
+
+.taskHeader{
+  width: 50%;
+  margin-right: 35%;
+}
+.statusBtn{
+  width: 4%;
+  margin-right: 3.5%;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+/* Style for CSS W3 School */
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  position: relative;
+  top: 80%;
+  background-color: #3498db;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 50%;
+  left: 25%;
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: .5;
+  left: 0%;
+  top: 0%;
+  bottom: 0;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  text-align: center;
+}
+
+/* Add styles to the form container */
+.form-container {
+  opacity: .99;
+  max-width: 40%;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  left: 30%;
+  top: 25%;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
